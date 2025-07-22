@@ -1,0 +1,56 @@
+# 👨‍💻 ServiceNow Project: User & Group Management
+
+## 🎯 Goal
+Simulate onboarding a new IT support staff in ServiceNow by managing:
+- Users
+- Groups
+- Roles
+- Access verification
+
+---
+
+## 🛠 Steps
+
+### Step 1: Create a New User
+- Go to `User Administration > Users`
+- Click **New**
+- Fill in:  
+  - User ID: `jsmith`  
+  - Name: John Smith  
+  - Email: `jsmith@example.com`  
+  - Department: IT Support  
+- Click **Submit**
+
+### Step 2: Create a Group
+- Navigate to: `User Administration > Groups`
+- Click **New**
+- Fill in:  
+  - Name: `IT Support Tier 1`  
+  - Description: Handles first-level incident support  
+- Submit the group
+
+### Step 3: Add User to Group
+- Open the group you just created
+- Under Group Members → click **Edit**
+- Add `jsmith` to the group
+- Save
+
+### Step 4: Assign Role to Group
+- In the same group record
+- Go to the **Roles** tab → click **Edit**
+- Add role: `itil`  
+- Save
+
+### Step 5: Test with Impersonation
+- Use **Impersonate User** (top right menu)
+- Select: `John Smith`
+- Try:
+  - Go to `Incident > Create New` → ✅ should work
+  - Go to `Change > Create New` → ❌ access denied (unless role added)
+- Exit impersonation
+
+---
+
+## ✅ Outcome
+- John Smith can create and manage incidents via inherited group role
+
