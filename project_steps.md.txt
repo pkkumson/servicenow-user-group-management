@@ -1,5 +1,5 @@
 # 👨‍💻 ServiceNow Project: User & Group Management
-
+###################################################################
 ## 🎯 Goal
 Simulate onboarding a new IT support staff in ServiceNow by managing:
 - Users
@@ -7,7 +7,7 @@ Simulate onboarding a new IT support staff in ServiceNow by managing:
 - Roles
 - Access verification
 
----
+################################################################
 
 ## 🛠 Steps
 
@@ -49,7 +49,6 @@ Simulate onboarding a new IT support staff in ServiceNow by managing:
   - Go to `Change > Create New` → ❌ access denied (unless role added)
 - Exit impersonation
 
----
 
 ## ✅ Outcome
 - John Smith can create and manage incidents via inherited group role
